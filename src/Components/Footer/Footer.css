@@ -1,15 +1,66 @@
 .footer-box{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 250px;
-    background-color: blue;
+    height: 200px;
+    background-color: #3a6f8f;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 20px;
 }
 .contact-us{
-    display: table;
     justify-content: start;
-    align-items: center;
     margin-left: 50px;
     margin-right: 50px;
-    
+    text-align: start;
+    text-decoration-line: underline;
+    font-size: 15px;
+    width: 250px;
+}
+.resources{
+    text-align: start;
+    text-decoration-line: underline;
+    font-size: 15px;
+    width: 250px;
+}
+.social-box{
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#insta{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+@media(max-width: 1005px){
+    .footer-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 500px;
+    }
+    .contact-us, .resources, .social-box{
+        margin: 0px;
+        font-size: 18.5px;
+    }
+    #insta{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .social-box{
+        justify-content: space-around;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+
+
+.copyright{
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: grey;
 }

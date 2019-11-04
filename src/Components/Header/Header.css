@@ -13,6 +13,10 @@
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: 'Titillium Web', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    text-decoration: none;
 }
 .header-link:hover{
     background-color: rgb(240, 240, 146);
@@ -55,8 +59,9 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    
+    color: black;
 }
+
 #donate-button{
     width: 20%;
     height: 35px;
@@ -86,7 +91,8 @@
     align-content: center;
     align-items: baseline;
     /* height: 700px; */
-    box-shadow: 0px 8px 10px 0px #000000
+    box-shadow: 0px 8px 10px 0px #000000;
+    z-index: 2;
 }
 .dropdown-links{
     font-size: 20px;

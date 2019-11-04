@@ -1,0 +1,107 @@
+.about-us {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.about-us-photo {
+  height: 550px;
+  background-color: azure;
+}
+.about-info {
+  height: 700px;
+  /* background-color: rgb(152, 253, 253); */
+}
+.about-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 27px;
+}
+.info-box {
+  width: 375px;
+  height: 650px;
+  /* background-color: blue; */
+  text-align: center;
+}
+.about-info-pics {
+  width: 350px;
+}
+
+.fuckh2 {
+  text-align: center;
+  display: block;
+  margin-top: 3px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+}
+.fuckp {
+  display: block;
+  padding: 5px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.team {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+#team-pic {
+  width: 400px;
+  padding: 10px;
+  margin-right: 100px;
+}
+#board-title {
+  display: flex;
+  flex-direction: column;
+}
+#directors {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+#list-box {
+  width: 420px;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  /* background-color: green; */
+  flex-direction: column;
+  border-left: 4px solid rgb(211, 211, 211);
+  line-height: 25px;
+  padding-left: 25px;
+  justify-content: center;
+}
+
+.faq-dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.faq-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.faq-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.faq-dropdown-content h5{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.faq-dropdown:hover .faq-dropbtn{
+    background-color: #3e8e41;
+}
+.faq-dropdown:hover .faq-dropbtn {
+    background-color: #3e8e41;
+  }

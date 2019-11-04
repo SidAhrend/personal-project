@@ -1,5 +1,6 @@
 import React from "react";
 import "../Header/Header.css";
+import {Link} from 'react-router-dom';
 
 class Header extends React.Component {
     constructor(){
@@ -36,15 +37,13 @@ class Header extends React.Component {
         
         </div>
         <div id="link-box">
-          <div className="header-link">home</div>
+          <Link to='/' style={{textDecoration: 'none', color: 'black'}}><div className="header-link">home</div></Link>
           <div className="header-link">adopt</div>
           <div className="header-link">get involved</div>
           <div className="header-link-dropdown">
-            <div className="dropbtn">about us</div>
+            <Link to='/about-us' style={{textDecoration: 'none', color: 'black'}}><div className="dropbtn">about us</div></Link>
             <div className="dropdown-content">
-              <a className="header-link" ref="#">
-                contact
-              </a>
+             <Link to='/contact'> <a className="header-link" ref="#">contact</a> </Link>
             </div>
           </div>
 
