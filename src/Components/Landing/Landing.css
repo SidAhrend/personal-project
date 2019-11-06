@@ -121,7 +121,7 @@ body{
     border-radius: 10%;
     font-family: 'Titillium Web', sans-serif;
     font-size: 23px;
-    background-color: rgb(240, 240, 146);
+    background-color: #E9A614;
     cursor: pointer;
     font-weight: bolder;
     font-size: 33px;
@@ -170,7 +170,7 @@ span{
     font-size: 23px;
     letter-spacing: 2px;
     text-align: center;
-    background-color: rgb(240, 240, 146);
+    background-color: #E9A614;
     cursor: pointer;
     margin-top: 15px;
 }

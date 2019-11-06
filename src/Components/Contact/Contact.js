@@ -11,8 +11,8 @@ class Contact extends React.Component {
         <div className="contact-photo"></div>
         <div className="contact-section">
             <div className="contact-text">
-                <span><h2>Welcome to Utah Animal Adoption Center!</h2></span>
-                <span><h3>Center Hours</h3></span>
+                <div><h2>Welcome to Utah Animal Adoption Center!</h2></div>
+                <div><h3>Center Hours</h3></div>
                 <p className='adopt-p'>Adoptions: Tuesday - Saturday 11:00 AM - 5:00 PM (The Last Meet and Greet is at 4:30 PM)</p>
                 <p>Vaccinations: Tuesday & Saturday Noon - 4:00 PM</p>
                 <span><h3>Contact Information:</h3></span>
@@ -26,6 +26,7 @@ class Contact extends React.Component {
                 </div>
             </div>
             <form id='contact-form'>
+            <div id='message-us-header'><h2>Message Us Here!</h2></div>
                 <span>Name</span>
                 <input className='contact-input' type="text"/>
                 <span>Email</span>

@@ -4,11 +4,26 @@
 
 .about-us-photo {
   height: 550px;
-  background-color: azure;
+  background-color: rgb(10, 255, 255);
+  width: 100%;
 }
 .about-info {
   height: 700px;
   /* background-color: rgb(152, 253, 253); */
+}
+@media (max-width: 1005px) {
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  .about-us-photo {
+    height: 550px;
+    background-color: rgb(10, 255, 255);
+    /* width: 100%; */
+    position: relative;
+    margin-bottom: 90vh;
+  }
 }
 .about-box {
   display: flex;
@@ -25,6 +40,9 @@
 .about-info-pics {
   width: 350px;
 }
+#board-title{
+  text-shadow: -10px 20px 5px rgba(0, 0, 0, 0.05);
+}
 
 .fuckh2 {
   text-align: center;
@@ -32,6 +50,7 @@
   margin-top: 3px;
   font-family: "Titillium Web", sans-serif;
   font-weight: bolder;
+  text-shadow: -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 .fuckp {
   display: block;
@@ -45,6 +64,29 @@
   height: 300px;
   justify-content: center;
 }
+
+@media (max-width: 1005px) {
+  .team {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    margin-top: 65vh;
+    margin-bottom: 50vh;
+  }
+  #board-title {
+    text-align: center;
+    font-size: 40px;
+  }
+  #team-pic {
+    justify-content: center;
+    margin: 0px;
+  }
+  #list-box {
+    margin-left: 100px;
+    transform: scale(1.2, 1);
+  }
+}
+
 #team-pic {
   width: 400px;
   padding: 10px;
@@ -73,35 +115,152 @@
   justify-content: center;
 }
 
-.faq-dropbtn {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+#faqs-header{
+  text-shadow: -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
-.faq-dropdown {
+
+.faqs {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.dropdown-faqs {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.faq-dropdown-content {
+
+.dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  top: 70px;
+  background-color: white;
+  width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.faq-dropdown-content h5{
-    color: black;
   padding: 12px 16px;
-  text-decoration: none;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+
+.dropdown-faqs:hover .dropdown-content {
   display: block;
 }
-.faq-dropdown:hover .faq-dropbtn{
-    background-color: #3e8e41;
+
+#faq-dropdown-boxes {
+  height: 125px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
-.faq-dropdown:hover .faq-dropbtn {
-    background-color: #3e8e41;
+
+#questions {
+  width: 200px;
+}
+#question {
+  width: 200px;
+  border: 1px solid rgb(247, 247, 247);
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1005px) {
+  #faq-dropdown-boxes {
+    flex-direction: column;
+    height: 400px;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 20px;
+    line-break: auto;
+    font-size: 20px;
+    width: 100%;
+    /* display: inline-block; */
+
   }
+  #question{
+    width: 100%;
+  
+  }
+  .faqs {
+    justify-content: center;
+  }
+  
+}
+
+
+
+
+/* sponsors section */
+#sponsor-header{
+  text-shadow: -10px 20px 5px rgba(0, 0, 0, 0.05);
+ 
+}
+
+.sponsors{
+  height: 735px;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sponsor-image{
+  width: 300px;
+  margin: 25px;
+}
+
+@media (max-width: 1005px) {
+  .sponsors{
+    height: 1700px;
+    flex-direction: column;
+  }
+  .sponsor-image{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.about-sub-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px;
+  background-color: rgb(230, 230, 230) ;
+}
+.about-sub-footer p {
+  width: 750px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+#sub-footer-button{
+  width: 150px;
+  height: 45px;
+  background-color: none;
+  border: black 2px solid;
+  border-radius: 25px;
+  background-color: rgb(230, 230, 230);
+  transition-duration: 0.7s;
+  cursor: pointer;
+  font-size: 19px;
+}
+#sub-footer-button:hover{
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+@media (max-width: 1005px) {
+  .about-sub-footer p{
+    width: 400px;
+  }
+}

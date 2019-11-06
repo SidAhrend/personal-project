@@ -1,0 +1,99 @@
+.donate-page {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.donate-picture {
+  height: 500px;
+  background-color: azure;
+}
+#sub-donate-header {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#sub-donate-header button {
+  width: 50%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #e9a614;
+  font-size: 22px;
+  font-family: "Titillium Web", sans-serif;
+  
+}
+#sub-donate-header h2 {
+  margin-bottom: 5px;
+}
+
+#sub-donate-header h3 {
+  text-align: center;
+  width: 800px;
+  margin-top: 0px;
+  font-weight: lighter;
+  color: grey;
+}
+.types-donation {
+  height: 500px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.donation-types-row {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+.donation-types-row h3,
+h4 {
+  margin: 0px;
+}
+.donation-types-row h4 {
+  font-size: 12px;
+}
+.donations-giving-box h1 {
+  margin: 5px;
+}
+.donations-giving-box {
+  width: 400px;
+  height: 400px;
+  padding-left: 25px;
+  text-align: start;
+  display: flex;
+  /* justify-content: start; */
+  align-items: start;
+  flex-direction: column;
+}
+#donate-picture {
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+}
+#amazon-header{
+    width: 100%;
+}
+
+.amazon-section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.amazon-section img{
+    width: 250px;
+}
+.animal-wishlist-box{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    justify-content: space-evenly;
+}
+.animal-wishlist-box button{
+    width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #e9a614;
+  font-size: 17px
+}

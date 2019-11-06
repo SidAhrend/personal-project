@@ -19,7 +19,7 @@
     text-decoration: none;
 }
 .header-link:hover{
-    background-color: rgb(240, 240, 146);
+    background-color: #E9A614;
     font-size: 22px;
     transition: .5s;
 }
@@ -28,7 +28,7 @@
     font-family: 'Titillium Web', sans-serif;
 }
 .dropbtn:hover{
-    background-color: rgb(240, 240, 146);
+    background-color: #E9A614;
     font-size: 22px;
     transition: .5s;
 }
@@ -36,7 +36,7 @@
     position: relative;
     display: inline-block;
 }
-.dropdown-content{
+.dropdown-content-header{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -50,7 +50,7 @@
     text-decoration: none;
     display: block;
 }
-.header-link-dropdown:hover .dropdown-content {display: block;}
+.header-link-dropdown:hover .dropdown-content-header {display: block;}
 
 
 #link-box{
@@ -99,7 +99,7 @@
     color: black;
 }
 .dropdown-links:hover{
-    background-color:  rgb(240, 240, 146);
+    background-color: #E9A614;
     font-size: 22px;
 }
 
