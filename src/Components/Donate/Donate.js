@@ -78,6 +78,45 @@ class Donate extends React.Component {
             <button>Amazon Wishlist for Dogs</button>
           </div>
         </div>
+
+        <div>
+          <h2>Shop and Earn Money for Utah Animal Adoption Center</h2>
+        </div>
+        <div className="donate-sub-footer">
+          <div id="smiths-box">
+            <a
+              href="https://www.smithsfoodanddrug.com/topic/community?activePage=community-rewards-3"
+              target="_blank"
+            >
+              <img
+                className="donate-logos"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/da/Smith%27s_logo.svg"
+                alt="smiths"
+              />
+            </a>
+            <p>
+              Find and select UAAC (our non-profit organization number is:
+              18828, or you can look up 'Utah Animal Adoption Center")
+            </p>
+          </div>
+          <div id="amazon-smile-box">
+            <a href="https://smile.amazon.com/ch/94-2950501">
+              <img
+                className="donate-logos"
+                src="https://logos-download.com/wp-content/uploads/2016/06/Amazon_Smile_logo.png"
+                alt="amazon smile"
+              />
+            </a>
+            <p>
+              When you shop online with Amazon, Utah Animal Adoption Center has
+              an opportunity to earn 0.5% of the purchase price on select items.
+              Support Utah Animal Adoption Center by starting your shopping at
+              <a href="https://smile.amazon.com/ch/94-2950501" target="_blank">
+                smile.amazon.com
+              </a>
+            </p>
+          </div>
+        </div>
       </div> //donate-page closing tag
     );
   }

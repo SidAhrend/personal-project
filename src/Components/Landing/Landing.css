@@ -7,8 +7,8 @@ body{
 
 .photo{
     width: 100%;
-    height: 325px;
-    background-color: azure;;
+    height: 500px;
+    background-color: azure;
 }
 
 
@@ -56,14 +56,14 @@ body{
 
 .adopt-button{
     border: 0px;
-    border-radius: 10%;
+    border-radius: 20px;
     width: 250px;
     height: 35px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 23px;
     letter-spacing: 2px;
     text-align: center;
-    background-color: rgb(240, 240, 146);
+    background-color: #e9a614;
     cursor: pointer;
 }
 @media(max-width: 1005px){
@@ -118,10 +118,10 @@ body{
     height: 50px;
     margin-bottom: 15px;
     border: 0px;
-    border-radius: 10%;
+    border-radius: 30px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 23px;
-    background-color: #E9A614;
+    background-color: #e9a614;
     cursor: pointer;
     font-weight: bolder;
     font-size: 33px;
@@ -163,7 +163,7 @@ span{
 }
 .sub-footer-buttons{
     border: 0px;
-    border-radius: 10%;
+    border-radius: 18px;
     width: 285px;
     height: 35px;
     font-family: 'Titillium Web', sans-serif;

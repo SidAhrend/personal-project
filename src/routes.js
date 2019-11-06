@@ -5,6 +5,7 @@ import Contact from "./Components/Contact/Contact";
 import About from "./Components/About-Us/About-Us";
 import Involved from './Components/Get-Involved/Get-Involved';
 import Donate from './Components/Donate/Donate';
+import AdoptHome from './Components/Adopt/Adopt-Home';
 
 export default (
   <Switch>
@@ -13,5 +14,6 @@ export default (
     <Route path="/about-us" component={About} />
     <Route path="/get-involved" component={Involved} />
     <Route path="/donate" component={Donate} />
+    <Route path="/adopt-home" component={AdoptHome} />
   </Switch>
 );
