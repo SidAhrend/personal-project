@@ -88,6 +88,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* height: 300px; */
 }
 
 #baby-little-button{
@@ -95,5 +96,25 @@
     height: 35px;
     border-radius: 20px;
     font-size: 20px;
+    margin-bottom: 25px;
     font-family: "Titillium Web", sans-serif;
+}
+@media(max-width: 1005px){
+    .admin-home{
+        height: 1500px
+    }
+    .content-box{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 20000px;
+    }
+    .animal-add{
+        /* margin-top: */
+    }
+    .admin-inputs{
+        width: 150px;
+    }
+    
 }

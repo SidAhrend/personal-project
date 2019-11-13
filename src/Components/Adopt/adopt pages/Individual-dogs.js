@@ -43,11 +43,12 @@ class IndividualDogs extends React.Component {
               <h3>Health: {this.state.dog.health}</h3>
               <h3>Preference: {this.state.dog.preference}</h3>
             </div>
-            <div className="profile-bio">
+            {/* <div className="profile-bio"> */}
               <div className="profile-bio-text">
+                <p>Bio</p>
                 <p>{this.state.dog.bio}</p>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
 
@@ -57,7 +58,7 @@ class IndividualDogs extends React.Component {
                 come visit {this.state.dog.name}!
             </div>
             <div className="google-thing">
-            <iframe id='google-api-thing' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.8001805201197!2d-111.94162918459202!3d40.81038457932125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f6a546b3a33f%3A0xba051736d419c859!2s1955%20N%20Redwood%20Rd%2C%20Salt%20Lake%20City%2C%20UT%2084116!5e0!3m2!1sen!2sus!4v1572626619354!5m2!1sen!2sus"></iframe>
+            <iframe id='google-api-thing' style={{overflow: 'hidden'}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.8001805201197!2d-111.94162918459202!3d40.81038457932125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f6a546b3a33f%3A0xba051736d419c859!2s1955%20N%20Redwood%20Rd%2C%20Salt%20Lake%20City%2C%20UT%2084116!5e0!3m2!1sen!2sus!4v1572626619354!5m2!1sen!2sus"></iframe>
             </div>
             <div className="come-visit-contact-info">
                 <div className='contact-links'>

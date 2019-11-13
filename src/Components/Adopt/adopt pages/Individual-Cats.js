@@ -44,6 +44,7 @@ class IndividualCats extends React.Component {
             </div>
             <div className="profile-bio">
               <div className="profile-bio-text">
+                <p>Bio</p>
                 <p>{this.state.cat.bio}</p>
               </div>
             </div>

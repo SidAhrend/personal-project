@@ -200,6 +200,7 @@ class AdminHome extends React.Component {
           </div>
 
           <div className="messages">
+            <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}><h1>Messages</h1></div>
                {this.state.messages.map(e => {
                   return(
                     <div className="individual-message">
@@ -222,8 +223,8 @@ class AdminHome extends React.Component {
           <Link to='/admin-edit'>
           <button id='baby-little-button'>Edit Page</button>
           </Link>
+          <button id='baby-little-button' onClick={this.handleLogout}>Logout</button>
         </div>
-        <button id='baby-little-button' onClick={this.handleLogout}>Logout</button>
       </div>
     );
   }

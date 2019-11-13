@@ -21,6 +21,7 @@
     -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
     box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    width: 300px;
 }
 #lame-h3{
     font-weight: lighter;

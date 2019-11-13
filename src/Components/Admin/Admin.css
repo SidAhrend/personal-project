@@ -39,3 +39,11 @@
     font-family: "Titillium Web", sans-serif;
     margin-top: 15px;
 }
+@media(max-width: 1005px){
+    .login-box{
+        width: 100%;
+    }
+    .admin-input{
+        width: 100%;
+    }
+}

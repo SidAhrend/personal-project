@@ -104,7 +104,7 @@ h4 {
 @media(max-width: 1005px){
     .types-donation{
         flex-direction: column;
-        height: 800px;
+        height: 850px;
         justify-content: center;
         
     }

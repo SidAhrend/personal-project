@@ -71,11 +71,11 @@ class Header extends React.Component {
         {/* phonable dropdown down here */}
 
         <div className="dropdown hide-dropdown" ref={this.dropdown}>
-          <div className="dropdown-links">home</div>
-          <div className="dropdown-links">adopt</div>
-          <div className="dropdown-links">get involved</div>
-          <div className="dropdown-links">about us</div>
-          <div className="dropdown-links">contact</div>
+          <Link style={{ textDecoration: "none", color: "black" }} to='/'><div className="dropdown-links">Home</div></Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to='/adopt-home'><div className="dropdown-links">Adopt</div></Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to='/about-us'><div className="dropdown-links">About Us</div></Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to='/contact'><div className="dropdown-links">Contact</div></Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to='/donate'><div className="dropdown-links">Donate</div></Link>
         </div>
       </div>
     );

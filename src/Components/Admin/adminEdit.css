@@ -114,6 +114,9 @@
     justify-content: space-around;
     margin-top: 40px;   
 }
+.edit-input-little-box input{
+    height: 20px;
+}
 #dropdown-edit-button-box button {
     width: 250px;
     height: 35px;
@@ -144,4 +147,44 @@
     height: 35px;
     border-radius: 20px;
     font-family: "Titillium Web", sans-serif;
+}
+@media(max-width: 1005px){
+    .admin-edit{
+        height: auto
+    }
+    .edit-big-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .individual-cattos{
+        flex-direction: column;
+        text-align: center;
+    }
+    .individual-doggos{
+        flex-direction: column;
+        text-align: center;
+    }
+    #edit-dropdown-big-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .edit-dropdown{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 500px;
+        margin-bottom: 15px;
+        height: 1500px;
+    }
+    .edit-input-little-box input{
+        border: 1px black solid;
+    }
+    
+    #dropdown-edit-button-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #dropdown-edit-button-box button{
+        margin-bottom: 25px;
+    }
 }

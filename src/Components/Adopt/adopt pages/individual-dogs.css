@@ -1,110 +1,142 @@
-#header-box{
-    height: 118px;
+#header-box {
+  height: 118px;
 }
-.profile{
-    height: 65vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    flex-direction: row;
-    margin: 0px;
-    font-family: 'Titillium Web', sans-serif;
+.profile {
+  height: 65vh;
+  /* background-color: whitesmoke; */
+  /* display: flex; */
+  justify-content: space-around;
+  align-items: start;
+  margin: 0px;
+  font-family: "Titillium Web", sans-serif;
 }
-.come-visit{
-    height: 50vh;
-    background-color: whitesmoke;
-}
-.info-bio-box{
-    margin-top: 35px;
-}
-#profile-pic{
-    width: 700px;
-    height: 467px;
-    margin-top: 35px;
-    -webkit-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-}
-.profile-info{
-    background-color: white;
-    height: 250px;
-    width: 600px;
-    margin-bottom: 12px;
-    padding-left: 25px;
-    display: flex;
-    align-items: start;
+@media (max-width: 1005px) {
+  .profile {
     flex-direction: column;
-    -webkit-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    
+    height: 200vh;
+  }
+  .come-visit-contact-info {
+    display: none;
+  }
+  .profile-info {
+    width: 100%;
+  }
+  .profile-bio-text {
+    width: 100%;
+  }
 }
-.profile-info h2{
-    margin: 0px;
-    
+.come-visit {
+  height: 50vh;
+  background-color: whitesmoke;
 }
-.profile-info h3{
-    margin: 0px;
+.info-bio-box {
+  margin-top: 35px;
 }
-.profile-bio{
-    height: 25vh;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#profile-pic {
+  width: 700px;
+  height: 467px;
+  margin-top: 35px;
+  -webkit-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+}
+.profile-info {
+  background-color: white;
+  height: 250px;
+  width: 600px;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  -webkit-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+}
+.profile-info h2 {
+  margin: 0px;
+}
+.profile-info h3 {
+  margin: 0px;
+}
+.profile-bio {
+  height: 25vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-bio-text {
+  width: 100%;
+  background-color: white;
+  height: 25vh;
+  -webkit-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  /* margin: 25px; */
+  /* font-family: 'Titillium Web', sans-serif; */
+}
+.come-visit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.come-visit-box {
+  width: 700px;
+  height: 350px;
+  background-color: white;
+  /* margin: 45px; */
+  -webkit-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 25px 36px -17px rgba(0, 0, 0, 0.75);
+}
+.come-visit-banner {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  /* border-bottom: solid 1px lightgrey; */
+  background-color: white;
+}
+#google-api-thing {
+  width: 100%;
+  height: 250px;
+  border: 0px;
+  margin: 0px;
+}
+.come-visit-contact-info {
+  display: flex;
+  font-family: "Titillium Web", sans-serif;
+}
+.contact-links h2 {
+  margin: 0px;
+}
+.contact-links {
+  height: 66px;
+  width: 300px;
+  background-color: white;
+}
+.contact-links h2 {
+  font-size: 15px;
+}
 
-}
-.profile-bio-text{
-    width: 100%;
-    background-color: white;
-    height: 25vh;
-    -webkit-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    /* margin: 25px; */
-    /* font-family: 'Titillium Web', sans-serif; */
-    
-}
-.come-visit{
-    display: flex;
+@media (max-width: 1005px) {
+  .profile {
+    flex-direction: column;
+    height: 800px;
+    display: block;
+    align-items: start;
     justify-content: center;
-    align-items: center;
-}
-.come-visit-box{
-    width: 700px;
-    height: 350px;
-    background-color: white;
-    /* margin: 45px; */
-    -webkit-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-    box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
-}
-.come-visit-banner{
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-    /* border-bottom: solid 1px lightgrey; */
-    background-color: white;
-}
-#google-api-thing{
+  }
+  .come-visit-contact-info {
+    display: none;
+  }
+  .profile-info {
+    width: 400px;
+  }
+  .profile-bio-text {
     width: 100%;
-    height: 250px;
-    border: 0px;
-    margin: 0px;
-}
-.come-visit-contact-info{
-    display: flex;
-    font-family: 'Titillium Web', sans-serif;
-}
-.contact-links h2{
-    margin: 0px;
-}
-.contact-links{
-    height: 66px;
-    width: 300px;
-    background-color: white;
-    
-}
-.contact-links h2{
-    font-size: 15px;
+  }
+  #profile-pic {
+    width: 100%;
+    height: auto;
+  }
 }
