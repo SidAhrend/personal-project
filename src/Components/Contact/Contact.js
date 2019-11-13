@@ -3,15 +3,69 @@ import "../Contact/Contact.css";
 import facebook from "../../photos/facebook.png";
 import insta from '../../photos/insta.png';
 import twitter from '../../photos/twitter.png';
+import PhoneInput from 'react-phone-number-input/input';
+import 'react-phone-number-input/style.css'
+import Axios from "axios";
+
 
 class Contact extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    }
+  }
+  // componentDidMount = () =>{
+  //   Axios.get('/contact/getAll')
+  //   .then(res => {
+      
+  //   })
+  // }
+  
+  handlePhone = (value) => {
+    this.setState({
+      phone: value
+    })
+  }
+  handleInput = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+  handleMessage = () => {
+    Axios.post('/contact/send', {
+      name: this.state.name,
+      email: this.state.email,
+      phone: this.state.phone,
+      message: this.state.message
+    })
+    .then(res => {
+      this.setState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      })
+      alert('message sent')
+    })
+    .catch(err => console.log('message didnt send', err))
+  }
+
   render() {
+    console.log(this.state.phone)
+    console.log(this.state)
     return (
       <div className="contact">
-        <div className="contact-photo"></div>
+        <div id="header-box"></div>
+        <div className="contact-photo">
+          <div id='centered'>Contact</div>
+        </div>
         <div className="contact-section">
             <div className="contact-text">
-                <div><h2>Welcome to Utah Animal Adoption Center!</h2></div>
+                <div><h2 id='shadow-letter'>Welcome to Utah Animal Adoption Center!</h2></div>
                 <div><h3>Center Hours</h3></div>
                 <p className='adopt-p'>Adoptions: Tuesday - Saturday 11:00 AM - 5:00 PM (The Last Meet and Greet is at 4:30 PM)</p>
                 <p>Vaccinations: Tuesday & Saturday Noon - 4:00 PM</p>
@@ -20,23 +74,27 @@ class Contact extends React.Component {
                 <p>info@utahanimals.org</p>
                 <p>1955 N. Redwood Road, Salt Lake City, UT 84116</p>
                 <div id='social-box'>
-                <img className='social-buttons' src={facebook} alt="facebook"/>
-                <img className='social-buttons' src={insta} alt="instagram"/>
-                <img className='social-buttons' src={twitter} alt="twitter"/>
+                <a href='https://www.facebook.com/theuaac' target='_blank' > <img id='facebook' src={facebook} alt="facebook" /> </a>
+                <a href='https://www.instagram.com/utahanimals/' target='_blank' > <img id='insta' src={insta} alt="instagram" /> </a>
+                <a href='https://twitter.com/UtahAnimals' target='_blank'> <img id='twitter' src={twitter} alt="twitter" /> </a>
                 </div>
             </div>
-            <form id='contact-form'>
+            <div id='contact-form'>
             <div id='message-us-header'><h2>Message Us Here!</h2></div>
                 <span>Name</span>
-                <input className='contact-input' type="text"/>
+                <input className='contact-input' type="text" name='name' value={this.state.name} onChange={(e) => this.handleInput(e)}/>
                 <span>Email</span>
-                <input className='contact-input' type="text"/>
+                <input className='contact-input' type="text" name='email' value={this.state.email} onChange={(e) => this.handleInput(e)}/>
                 <span>Phone</span>
-                <input className='contact-input' type="text"/>
+                <PhoneInput 
+                style={{width: 260, height: 30}}
+                country='US'
+                value={this.state.phone}
+                onChange={(value) => this.handlePhone(value)}/>
                 <span>Your Message</span>
-                <input id='message-input' type="text"/>
-                <button id='submit-btn'>Submit</button>
-            </form>
+                <input id='message-input' type="text" name='message' value={this.state.message} onChange={(e) => this.handleInput(e)}/>
+                <button id='submit-btn' onClick={this.handleMessage} >Submit</button>
+            </div>
         </div>
 
         <div className="google-map">

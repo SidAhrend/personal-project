@@ -3,9 +3,26 @@
 }
 
 .about-us-photo {
-  height: 550px;
-  background-color: rgb(10, 255, 255);
+  height: 500px;
+  background-image: url("https://images.wallpaperscraft.com/image/dog_black_underwater_swimming_water_74417_3840x2160.jpg") ;
   width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+#centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  color: white;
+  font-weight: bolder;
+}
+.about-us-photo img{
+  /* margin-top: 100px; */
+  width: 100%;
+  height: 100%
 }
 .about-info {
   height: 700px;
@@ -39,6 +56,9 @@
 }
 .about-info-pics {
   width: 350px;
+  -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
 }
 #board-title{
   text-shadow: -10px 20px 5px rgba(0, 0, 0, 0.05);
@@ -89,8 +109,11 @@
 
 #team-pic {
   width: 400px;
-  padding: 10px;
+  margin: 10px;
   margin-right: 100px;
+  -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
 }
 #board-title {
   display: flex;

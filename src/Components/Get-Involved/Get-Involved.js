@@ -5,7 +5,10 @@ class GetInvolved extends React.Component {
   render() {
     return (
       <div className="getInvolved">
-        <div className="get-involved-photo"></div>
+        <div id="header-box"></div>
+        <div className="get-involved-photo">
+          <div id='centered'>Get Involved</div>
+        </div>
         <div className="thank-you-section">
           <h1>Thank you for your interest in getting involved with UAAC!</h1>
           <h4>

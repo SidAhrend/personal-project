@@ -1,0 +1,56 @@
+.dogAdoption-page{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.dog-adoption-pic{
+    height: 500px;
+    background-image: url('https://images.wallpaperscraft.com/image/dog_sitting_foliage_118931_3840x2160.jpg');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.animalPage{
+    width: 300px;
+    /* height: 330px; */
+    background-color: white;
+}
+.animalPage img{
+    height: 275px;
+    width: 100%;
+}
+.animalPage h5{
+    font-size: 17px;
+    margin: 0px 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+#animalPage-info{
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#location-stuff{
+    width: 100%;
+    border-top: 1px solid lightgrey;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.animalPage{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    -webkit-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
+    box-shadow: 3px 25px 36px -17px rgba(0,0,0,0.75);
+    border: 1px lightgrey solid;
+}
+.adoption-content{
+    /* height: 500px; */
+    background-color: whitesmoke;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}

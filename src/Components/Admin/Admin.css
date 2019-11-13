@@ -1,0 +1,41 @@
+.admin{
+    height: 100vh; 
+    background-color: whitesmoke; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Titillium Web", sans-serif;
+}
+.login-box{
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    font-family: "Titillium Web", sans-serif;
+}
+#UAAC-pic{
+    width: 500px;
+    padding-bottom: 20px;
+}
+.admin-input{
+    width: 500px;
+    height: 35px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    border: 1px solid lightgrey;
+    font-family: "Titillium Web", sans-serif;
+}
+#admin-button{
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+    margin-top: 15px;
+}

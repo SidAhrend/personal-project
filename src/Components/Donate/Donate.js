@@ -1,11 +1,16 @@
 import React from "react";
 import "../Donate/donate.css";
+import {Link} from 'react-router-dom';
 
 class Donate extends React.Component {
   render() {
     return (
       <div className="donate-page">
-        <div className="donate-picture"></div>
+        <div id="header-box"></div>
+        <div className="donate-picture">
+        <div id='centered'>Donate</div>
+        </div>
+        
         <div id="sub-donate-header">
           <h2>Donate to Utah Animal Adoption Center</h2>
           <h3>
@@ -14,7 +19,7 @@ class Donate extends React.Component {
             work without the support of our donors. Please consider making a
             tax-deductible donation to support our mission.
           </h3>
-          <button>Donate</button>
+          <Link to='/stripe'><button id='amazon-btn'>Donate</button></Link>
         </div>
 
         <div className="types-donation">
@@ -68,14 +73,14 @@ class Donate extends React.Component {
               src="https://images.unsplash.com/photo-1548546738-8509cb246ed3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
               alt="cat"
             />
-            <button>Amazon Wishlist for Cats</button>
+            <a href='https://www.amazon.com/hz/wishlist/ls/3BHS7O6MTBMH7/ref=cm_go_nav_hz' target='_blank' className='amazon-btn'>Amazon Wishlist for Cats</a>
           </div>
           <div className="animal-wishlist-box">
             <img
               src="https://images.unsplash.com/photo-1501472193205-56ffb66400f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
               alt="dogs"
             />
-            <button>Amazon Wishlist for Dogs</button>
+            <a href='https://www.amazon.com/hz/wishlist/ls/CSCLQO4CT567/ref=cm_go_nav_hz' target='_blank' className='amazon-btn'>Amazon Wishlist for Dogs</a>
           </div>
         </div>
 

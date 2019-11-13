@@ -11,7 +11,11 @@ class About extends React.Component {
     console.log(this.dropdown);
     return (
       <div className="about-us">
-        <div className="about-us-photo"></div>
+        <div id="header-box"></div>
+        <div className="about-us-photo">
+          {/* <img src="https://images.wallpaperscraft.com/image/dog_black_underwater_swimming_water_74417_3840x2160.jpg" alt=""/> */}
+          <div id='centered'>About Us</div>
+        </div>
 
         <div className="about-info">
           <div className="about-box">
@@ -69,10 +73,8 @@ class About extends React.Component {
                 opportunities available at our shelter. Sponsorships are
                 available at all levels and can also include in-kind donations.
                 For additional information on how to partner with UAAC, contact
-                Samantha Iverson Johnson, at (801) 540-0710 or via email at
-                <Link to="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&su=We%27d+Like+To+Be+A+UAAC+Sponsor!&to=samantha@utahanimals.org">
-                  samantha@utahanimals.org.
-                </Link>
+                Samantha Iverson Johnson, at (801) 540-0710 or via email at 
+                samantha@utahanimals.org.
               </p>
             </div>
           </div>
@@ -289,8 +291,9 @@ Observe the Animal's Environment: Is there adequate shelter and water outside? I
               
                adoptable dogs and cats through rescue, spaying, neutering, education, and
                <br/>
-                adoption.</p>
-            <button id='sub-footer-button'>Donate</button>
+                adoption.
+            </p>
+            <Link to='/donate'><button id='sub-footer-button'>Donate</button></Link>
 
         </div>
       </div>

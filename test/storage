@@ -1,3 +1,37 @@
+
+
+<div id="header-box"></div>
+
 //this is for buttons throughout the project
 border-radius: 20px
 
+// text shadows
+text-shadow: -10px 20px 5px rgba(0, 0, 0, 0.05);
+
+
+//image shadow
+ -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+
+
+//button shadow
+box-shadow: 0px 7px 0px -1px black;
+
+//big image styling
+ position: relative;
+  background-position: center;
+  background-size: cover;
+
+#centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  color: white;
+  font-weight: bolder;
+}
+
+
+<div id='centered'></div>

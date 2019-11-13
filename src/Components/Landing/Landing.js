@@ -1,11 +1,15 @@
 import React from "react";
 import "../Landing/Landing.css";
+import {Link} from 'react-router-dom';
 
 class Landing extends React.Component {
   render() {
     return (
       <div className="Landing">
-        <div className="photo"></div>
+        <div id="header-box"></div>
+        <div className="photo">
+        <div id='centered'>Welcome!</div>
+        </div>
         <h1>Finding Forever Homes</h1>
         <div className="adoption-section">
           <div className="dog-adoption">
@@ -15,7 +19,7 @@ class Landing extends React.Component {
               alt="dog photo"
             />
             <br />
-            <button className="adopt-button">adopt a dog</button>
+            <Link to='/adopt-dogs'><button className="adopt-button">adopt a dog</button></Link>
           </div>
           <div className="cat-adoption">
             <img
@@ -24,7 +28,7 @@ class Landing extends React.Component {
               alt="cat photo"
             />
             <br />
-            <button className="adopt-button">adopt a cat</button>
+            <Link to='/adopt-cats'><button className="adopt-button">adopt a cat</button></Link>
           </div>
         </div>
 
@@ -38,21 +42,21 @@ class Landing extends React.Component {
           </div>
           <div id='donate-info'>
             <p>Utah Animal Adoption Center is funded largely by individual donations, corporate support, and private foundation grants. The money raised by UAAC helps to save lives by supporting animal rescue and providing medical attention for pets in need.</p>
-            <button id='donate-section-button'>donate</button>
+            <Link to='/donate'><button id='donate-section-button'>donate</button></Link>
           </div>
         </div>
         <div className="sub-footer">
             <div className='sub-footer-boxes'>
             <img className='sub-footer-pics' src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="dog"/>
-            <button className='sub-footer-buttons'>Volunteer</button>
+            <Link to='/get-involved'><button className='sub-footer-buttons'>Volunteer</button></Link>
             </div>
             <div className='sub-footer-boxes'>
             <img className='sub-footer-pics' src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="cat"/>
-            <button className='sub-footer-buttons'>About Us</button>
+            <Link to='/about-us'><button className='sub-footer-buttons'>About Us</button></Link>
             </div>
             <div className='sub-footer-boxes'>
             <img className='sub-footer-pics' src="https://images.unsplash.com/photo-1555897209-208b67f652c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="dogs"/>
-            <button className='sub-footer-buttons'>Contact Us</button>
+            <Link to='/contact'><button className='sub-footer-buttons'>Contact Us</button></Link>
             </div>
         </div>
       </div>

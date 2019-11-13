@@ -3,7 +3,10 @@
 }
 .get-involved-photo {
   height: 500px;
-  background-color: azure;
+  background-image: url('https://images.wallpaperscraft.com/image/cat_collar_lying_home_110585_3840x2160.jpg');
+  position: relative;
+  background-position: center;
+  background-size: cover;
 }
 .thank-you-section {
   height: 200px;
@@ -100,6 +103,9 @@
 }
 #foster-photo{
     width: 500px;
+    -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
 }
 #foster-photo-box{
 padding: 25px;
@@ -143,7 +149,10 @@ padding: 25px;
 }
 #doggo-photo{
     width: 350px;
-    margin-right: -150px
+    margin-right: -150px;
+    -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
 }
 .links-resources, .pet-care{
 width: 400px;

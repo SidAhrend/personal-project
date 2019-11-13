@@ -37,7 +37,9 @@ class Header extends React.Component {
           <Link to="/" style={{ textDecoration: "none", color: "black" }}>
             <div className="header-link">home</div>
           </Link>
+          <Link to='/adopt-home' style={{ textDecoration: "none", color: "black" }}>
           <div className="header-link">adopt</div>
+          </Link>
           <Link to='/get-involved'  style={{ textDecoration: "none", color: "black" }}>
           <div className="header-link">get involved</div>
           </Link>
@@ -57,7 +59,7 @@ class Header extends React.Component {
             </div>
           </div>
 
-          <button id="donate-button">donate</button>
+         <Link to='/donate'> <button id="donate-button">donate</button></Link>
         </div>
 
           {/* dropdown */}

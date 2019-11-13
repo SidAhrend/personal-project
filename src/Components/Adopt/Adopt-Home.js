@@ -1,11 +1,15 @@
 import React from "react";
 import "../Adopt/adopt-home.css";
+import {Link} from 'react-router-dom';
 
 class AdoptHome extends React.Component {
   render() {
     return (
       <div className="adopt-page">
-        <div className="adopt-home-photo"></div>
+        <div id="header-box"></div>
+        <div className="adopt-home-photo">
+        <div id='centered'>Adopt</div>
+        </div>
         <div id="adopt-sub-header">
           <h1 style={{marginBottom: 0}}>Adopting From Utah Animal Adoption Center</h1>
           <h3 id='lame-h3'>
@@ -22,7 +26,7 @@ class AdoptHome extends React.Component {
               src="https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
               alt="cats"
             />
-            <button>Find Your New Furry Friend</button>
+           <Link to='/adopt-cats'> <button id='find-friend-btn'>Find Your New Furry Friend</button></Link>
             <h4>Cats younger than six months: $125</h4>
             <h4>Cats older than six months: $100+</h4>
             <h4>Purebreds: $400</h4>
@@ -34,7 +38,7 @@ class AdoptHome extends React.Component {
               src="https://images.unsplash.com/photo-1508814437933-f0c7d18a9217?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
               alt="dogs"
             />
-            <button>Find Your New Cuddle Buddy</button>
+           <Link to='/adopt-dogs'> <button id='find-friend-btn'>Find Your New Cuddle Buddy</button></Link>
             <h4>Dogs younger than six months: $320+</h4>
             <h4>Dogs older than six months: $200+</h4>
           </div>

@@ -4,7 +4,10 @@
 
 .adopt-home-photo {
   height: 500px;
-  background-color: azure;
+  background-image: url('https://images.wallpaperscraft.com/image/cat_muzzle_wonder_120521_3840x2160.jpg');
+  position: relative;
+  background-position: center;
+  background-size: cover;
 }
 #adopt-sub-header{
     width: 100%;
@@ -13,7 +16,12 @@
     flex-direction: column;
     align-items: center;
 }
-
+.adopt-home-photos{
+    height: 200px;
+    -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+}
 #lame-h3{
     font-weight: lighter;
     width: 700px;
@@ -53,14 +61,17 @@
   margin: 0;
   
 }
-.animal-selectors button {
+#find-friend-btn {
   margin-top: 15px;
-  width: 100%;
+  border: 0px;
+  width: 350px;
   height: 35px;
   border-radius: 20px;
   background-color: #e9a614;
   font-size: 22px;
   font-family: "Titillium Web", sans-serif;
+  box-shadow: 0px 7px 0px -1px black;
+  cursor: pointer;
 }
 @media(max-width: 1005px){
     .main-adopt-content{
@@ -99,6 +110,10 @@
     width: 450px;
     height: 300px;
     /* padding: 20px 40px; */
+    -webkit-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 24px 24px -9px rgba(0,0,0,0.75);
+
 }
 @media(max-width: 1005px){
     .senior-for-senior{
