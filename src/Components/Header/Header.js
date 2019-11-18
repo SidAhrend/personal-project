@@ -75,6 +75,7 @@ class Header extends React.Component {
           <Link style={{ textDecoration: "none", color: "black" }} to='/adopt-home'><div className="dropdown-links">Adopt</div></Link>
           <Link style={{ textDecoration: "none", color: "black" }} to='/about-us'><div className="dropdown-links">About Us</div></Link>
           <Link style={{ textDecoration: "none", color: "black" }} to='/contact'><div className="dropdown-links">Contact</div></Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to='/get-involved'><div className="dropdown-links">Get Involved</div></Link>
           <Link style={{ textDecoration: "none", color: "black" }} to='/donate'><div className="dropdown-links">Donate</div></Link>
         </div>
       </div>

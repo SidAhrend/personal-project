@@ -7,7 +7,7 @@ const authCtrl = require('./controllers/authCtrl');
 const msgCtrl = require('./controllers/msgCtrl');
 const animalCtrl = require('./controllers/animalCtrl');
 const editCtrl = require('./controllers/editCtrl');
-const stripe = require('stripe')('sk_test_TjFjp2pLrGUoAhAmdrlEe7ed00gJSH7BUc')
+const stripe = require('stripe')('sk_test_TjFjp2pLrGUoAhAmdrlEe7ed00gJSH7BUc');
 
 const app = express();
 

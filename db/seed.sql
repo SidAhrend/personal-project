@@ -41,7 +41,7 @@ imageUrl text
 );
 
 
-create table location(
+create table location (
 location_id serial primary key,
 city varchar(50),
 state varchar(30),
