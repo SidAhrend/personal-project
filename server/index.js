@@ -11,7 +11,8 @@ const stripe = require('stripe')('sk_test_TjFjp2pLrGUoAhAmdrlEe7ed00gJSH7BUc');
 
 const app = express();
 
-app.use(express.json());
+// app.use(express.json());
+app.use( express.static( `${__dirname}/../build` ) );
 
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db);
